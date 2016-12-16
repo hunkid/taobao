@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.header1 {
+    // height: 35px;
+    background-color: #f5f5f5;
+    color: #6c6c6c;
+    // overflow: hidden;
+}
+
+.header1 .wrapper {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.header1 .wrapper ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.header1 .wrapper .nav .nav-item {
+    position: relative;
+    // display: inline;
+    padding: 0 6px;
+    height: 35px;
+    line-height: 35px;
+    color: #6c6c6c;
+    display: inline-block;
+    // padding: 0;
+    // margin: 0;
+    float: left;
+}
+
+.nav-pipe {
+    padding: 0 5px;
+    color: #dedee3;
+}
+
+.header1 .wrapper .nav-icon {
+    width: 12px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header1 .wrapper a:link,
+.header1 .wrapper a:visited,
+.header1 .wrapper a:focus,
+.header1 .wrapper a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header1 .wrapper a:hover {
+    color: #f22e00;
+}
+
+#message-unread .nav-icon {
+    background-image: url(../../image/icon/message-unread.png);
+}
+
+#shoppingcar .nav-icon {
+    background-image: url(../../image/icon/shoppingcar.png);
+}
+
+#myfavorite .nav-icon {
+    background-image: url(../../image/icon/myfavorite.png);
+}
+
+#sitenav .nav-icon {
+    background-image: url(../../image/icon/sitenav.png);
+}
+
+.color-o {
+    color: #f22e00;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.f-r {
+    float: right;
+}
+
+.f-l {
+    float: left;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    // margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    // margin-right: 6px;
+}
+
+
+/*header1面板设置*/
+
+.header1 .toggle {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #eee;
+    border-top: 0;
+    padding: 8px;
+    overflow: hidden;
+}
+
+#userinfo .toggle {
+    width: 248px;
+    height: 187px;
+    color: #000;
+}
+
+#userinfo .toggle p {
+    height: 20px;
+    line-height: 20px;
+}
+
+#userinfo .toggle .userimg {
+    display: block;
+    margin: 0 8px 4px;
+}
+
+#userinfo .toggle img {
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
+}
+
+#userinfo .toggle .account-nav {
+    text-align: right;
+}
+
+#userinfo .toggle .secpanel {
+    clear: both;
+}
+
+#userinfo .toggle .secpanel .header-user-tip {
+    text-align: center;
+    width: 228px;
+    height: 15px;
+    padding: 2px 0;
+    border: 1px #ddf6be solid;
+    background-color: #e9fecf;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+         -o-border-radius: 2px;
+            border-radius: 2px;
+}
+
+#userinfo .header-user-split {
+    margin: 10px 0;
+    height: 1px;
+    border: 0;
+    background-color: #eee;
+}
+
+#userinfo .toggle ul li {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#userinfo .toggle .vip {
+    width: 36px;
+    height: 36px;
+}
+
+#userinfo .toggle ul li a {
+    display: inline;
+}
+
+#mytaobao .toggle,
+#salescenter .toggle,
+#contactservice .toggle {
+    padding: 8px 0;
+    width: 80px;
+    line-height: 1.8;
+}
+
+#mytaobao .toggle a,
+#salescenter .toggle a,
+#contactservice .toggle a {
+    display: block;
+    padding: 4px;
+    margin: 0;
+}
+
+#sitenav .toggle {
+    padding: 0;
+    right: 0;
+    width: 1188px;
+}
+
+#sitenav .toggle .wrapper {
+    width: 100%;
+}
+
+#sitenav .toggle .col {
+    width: 283px;
+    border-left: 1px solid #eee;
+    padding: 6px;
+}
+
+#sitenav .toggle ul {
+    width: 100%;
+}
+
+#sitenav .toggle ul li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+#sitenav .toggle ul li a:link,
+#sitenav .toggle ul li a:visited,
+#sitenav .toggle ul li a:active {
+    color: #000;
+    padding: 8px;
+}
+
+#sitenav .toggle ul li a:hover {
+    color: #fff;
+}
+
+#sitenav .toggle .thememark h4 {
+    color: #fc581e;
+}
+
+#sitenav .toggle .thememark ul li a:hover {
+    background-color: #fc581e;
+}
+
+#sitenav .toggle .col h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;";
+}
+
+#sitenav .toggle .thememark li {
+    width: 25%;
+}
+
+
+#sitenav .toggle .featuremark h4 {
+    color: #a6bd46;
+}
+
+#sitenav .toggle .featuremark ul li a:hover {
+    background-color: #a6bd46;
+}
+
+#sitenav .toggle .featuremark li {
+    width: 33.3333333%;
+}
+
+
+#sitenav .toggle .aliapp h4 {
+    color: #d75696;
+}
+
+#sitenav .toggle .aliapp ul li a:hover {
+    background-color: #d75696;
+}
+
+#sitenav .toggle .aliapp li {
+    width: 33.3333333%;
+}
+
+#sitenav .toggle .wonderrec h4 {
+    color: #40a7de;
+}
+
+#sitenav .toggle .wonderrec ul li a:hover {
+    background-color: #40a7de;
+}
+
+#sitenav .toggle .wonderrec li {
+    width: 50%;
+}
