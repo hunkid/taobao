@@ -553,9 +553,13 @@ a:active {
     padding: 0;
 }
 
+.screen .rect .rect-wrap .screen-col-a {
+    width: 520px;
+}
+
 .screen .rect .rect-wrap .adlunbo {
     position: relative;
-    width: 520px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -611,4 +615,43 @@ a:active {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.screen .rect .rect-wrap .screen-col-a .admiddle {
+    height: 26px;
+    position: relative;
+    border-bottom: 2px solid #c12c26;
+    background-color: #f1f1f1;
+    vertical-align: bottom;
+}
+
+.screen .rect .rect-wrap .screen-col-a .admiddle span{
+    position: relative;
+    bottom: -2px;
+    background-image: url(../../image/icon/tmall.gif);
+    font-size: 14px;
+    line-height: 32px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-style: normal;
+    padding-left: 48px;
+    color: #3c3c3c;
+    border-bottom: 2px solid #3c3c3c;
+}
+
+.screen .rect .rect-wrap .screen-col-a .admiddle em {
+    margin-left: 6px;
+    color: #666;
+    font-style: normal;
+}
+
+.screen .rect .rect-wrap .screen-col-a .admiddle strong,
+.screen .rect .rect-wrap .screen-col-a .admiddle strong *{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.screen .rect .rect-wrap .screen-col-a .admiddle strong i {
+    color: #d47e7e;
 }
