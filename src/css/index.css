@@ -377,18 +377,21 @@ a:active {
 }
 
 .header2 .searchwrap .search-button button {
-    font-size: 1.5em;
-    color: #fff;
-    background-color: #ff4200;
-    cursor: pointer;
     width: 100%;
     height: 100%;
+}
+
+button {
     border: 0;
     outline: 0;
     font-weight: bold;
+    color: #fff;
+    background-color: #ff4200;
+    cursor: pointer;
+    font-size: 1.5em;
 }
 
-.header2 .searchwrap .search-button button:hover {
+button:hover {
     background-color: #f52b00;
 }
 
@@ -567,19 +570,27 @@ a:active {
     height: 280px;
 }
 
-.screen .rect .rect-wrap .adlunbo .ad-item {
+.screen .rect .rect-wrap .ad2 {
+    height: 201px;
+}
+
+.screen .rect .rect-wrap .ad1 .ad-item {
     width: 2600px;
 }
+
+.screen .rect .rect-wrap .ad2 .ad-item {
+    width: 2880px;
+}
+
 .screen .rect .rect-wrap .adlunbo ul li {
     display: block;
     float: left;
 }
 
 .screen .rect .rect-wrap .adlunbo .lunbo-nav {
-    background-color: rgba(255,255,255,.3);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#4dffffff', GradientType=0);
+    background-color: rgba(255, 255, 255, .3);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4dffffff", endColorstr="#4dffffff", GradientType=0);
     height: 13px;
-    width: 65px;
     text-align: center;
     display: block;
     -webkit-border-radius: 10px;
@@ -591,6 +602,15 @@ a:active {
     bottom: 15px;
     left: 50%;
     margin-left: -33px;
+}
+
+.screen .rect .rect-wrap
+ .ad1 .lunbo-nav {
+    width: 65px;
+}
+
+.screen .rect .rect-wrap .ad1 .lunbo-nav {
+    width: 78px;
 }
 
 .screen .rect .rect-wrap .adlunbo .lunbo-nav li {
@@ -625,9 +645,9 @@ a:active {
     vertical-align: bottom;
 }
 
-.screen .rect .rect-wrap .screen-col-a .admiddle span{
+.screen .rect .rect-wrap .screen-col-a .admiddle span {
     position: relative;
-    bottom: -2px;
+    bottom: -3px;
     background-image: url(../../image/icon/tmall.gif);
     font-size: 14px;
     line-height: 32px;
@@ -646,7 +666,7 @@ a:active {
 }
 
 .screen .rect .rect-wrap .screen-col-a .admiddle strong,
-.screen .rect .rect-wrap .screen-col-a .admiddle strong *{
+.screen .rect .rect-wrap .screen-col-a .admiddle strong * {
     font-style: normal;
     font-weight: normal;
     line-height: 32px;
@@ -654,4 +674,152 @@ a:active {
 
 .screen .rect .rect-wrap .screen-col-a .admiddle strong i {
     color: #d47e7e;
+}
+
+.screen .rect .rect-wrap .screen-col-a .turnLorR {
+    width: 520px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transition: all .2s;
+         -o-transition: all .2s;
+            transition: all .2s;
+    color: #fff;
+}
+
+.screen .rect .rect-wrap .screen-col-a .turnLorR a {
+    display: block;
+    width: 24px;
+    height: 36px;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    background-color: rgba(0,0,0,.3);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000', GradientType=0);
+    text-align: center;
+    font-weight: bold;
+}
+
+.screen .rect .rect-wrap .screen-col-a .turnLorR a:hover {
+    background-color: rgba(0,0,0,.5);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d00000', endColorstr='#5d000000', GradientType=0);
+}
+
+.screen .rect .rect-wrap .screen-col-b {
+    margin-left: 10px;
+}
+
+.screen .rect .rect-wrap .screen-col-b .hot {
+    height: 26px;
+    position: relative;
+}
+
+.screen .rect .rect-wrap .screen-col-b .hot span {
+    position: absolute;
+    bottom: 8px;
+    color: #a1a1a1;
+}
+
+.screen .rect .rect-wrap .screen-col-c {
+    margin-left: 10px;
+    width: 290px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .memember,
+.screen .rect .rect-wrap .screen-col-c .news {
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+.screen .rect .rect-wrap .screen-col-c .memember {
+    padding: 15px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .memember .member-person img {
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.screen .rect .rect-wrap .screen-col-c .hello {
+    height: 18px;
+    line-height: 18px;
+    color: #3c3c3c;
+    margin-bottom: 2px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .tbhy {
+    height: 20px;
+    line-height: 20px;
+    color: #3c3c3c;
+}
+
+.screen .rect .rect-wrap .screen-col-c .tbhy .tbhy-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../image/icon/bgicon.png) 0 -882px no-repeat;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .member-btn:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: none;
+    clear: both;
+}
+
+.member-btn {
+    height: 40px;
+}
+.member-btn a {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    color: #fff;
+    background-color: #ff4200;
+    height: 25px;
+    margin-right: 7px;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+
+.member-btn a:hover {
+    background-color: #f52b00;
+}
+
+.member-btn .login {
+    width: 80px;
+}
+
+.member-btn .register {
+    width: 80px;
+}
+
+.member-btn .opshop {
+    width: 78px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .news {
+    width: 100%;
+    margin-top: 2px;
+    padding: 7px 0 4px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .news .nav {
+    padding: 0 8px;
+    margin-top: 4px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .news .nav li {
+    display: block;
+    float: left;
 }
