@@ -5,7 +5,12 @@
 }
 
 body {
+    color: #3c3c3c;
     background-color: #f5f5f5;
+}
+
+.hide {
+    display: none;
 }
 
 .header1 {
@@ -72,6 +77,10 @@ a:focus,
 a:active {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: #ff4400;
 }
 
 .header1 .wrapper a:hover,
@@ -604,8 +613,7 @@ button:hover {
     margin-left: -33px;
 }
 
-.screen .rect .rect-wrap
- .ad1 .lunbo-nav {
+.screen .rect .rect-wrap .ad1 .lunbo-nav {
     width: 65px;
 }
 
@@ -694,15 +702,15 @@ button:hover {
     font-size: 16px;
     height: 36px;
     line-height: 36px;
-    background-color: rgba(0,0,0,.3);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000', GradientType=0);
+    background-color: rgba(0, 0, 0, .3);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4d000000", endColorstr="#4d000000", GradientType=0);
     text-align: center;
     font-weight: bold;
 }
 
 .screen .rect .rect-wrap .screen-col-a .turnLorR a:hover {
-    background-color: rgba(0,0,0,.5);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d00000', endColorstr='#5d000000', GradientType=0);
+    background-color: rgba(0, 0, 0, .5);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5d00000", endColorstr="#5d000000", GradientType=0);
 }
 
 .screen .rect .rect-wrap .screen-col-b {
@@ -730,8 +738,6 @@ button:hover {
     background-color: #fff;
     text-align: center;
 }
-
-
 
 .screen .rect .rect-wrap .screen-col-c .memember {
     padding: 15px;
@@ -778,6 +784,7 @@ button:hover {
 .member-btn {
     height: 40px;
 }
+
 .member-btn a {
     display: block;
     font-weight: bold;
@@ -790,7 +797,6 @@ button:hover {
     vertical-align: middle;
     line-height: 25px;
 }
-
 
 .member-btn a:hover {
     background-color: #f52b00;
@@ -815,11 +821,48 @@ button:hover {
 }
 
 .screen .rect .rect-wrap .screen-col-c .news .nav {
+    width: 100%;
     padding: 0 8px;
     margin-top: 4px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .news .newsshow {
+    padding-top: 14px;
+    height: 60px;
 }
 
 .screen .rect .rect-wrap .screen-col-c .news .nav li {
     display: block;
     float: left;
+    margin: 0 8px;
+    width: 39px;
+    color: #3c3c3c;
+}
+
+.screen .rect .rect-wrap .screen-col-c .news .nav li a:hover {
+    color: #f40;
+}
+
+.screen .rect .rect-wrap .screen-col-c .newsshow ul li {
+    padding: 0;
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+.screen .rect .rect-wrap .screen-col-c .newsshow ul li a{
+    float: left;
+}
+
+.screen .rect .rect-wrap .screen-col-c .newsshow .news-first li:first-child {
+    width: 260px;
+}
+
+.screen .rect .rect-wrap .screen-col-c .newsshow ul {
+    width: 270px;
+    height: 60px;
+    margin: 0 auto;
 }
