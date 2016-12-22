@@ -162,10 +162,10 @@ a:hover {
 
 #userinfo .toggle img {
     -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-         -o-border-radius: 50%;
-            border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 }
 
 #userinfo .toggle .account-nav {
@@ -184,10 +184,10 @@ a:hover {
     border: 1px #ddf6be solid;
     background-color: #e9fecf;
     -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-         -o-border-radius: 2px;
-            border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
 }
 
 #userinfo .header-user-split {
@@ -544,10 +544,10 @@ button:hover {
     background-color: #f40;
     color: #fff !important;
     -webkit-border-radius: .8em;
-       -moz-border-radius: .8em;
-        -ms-border-radius: .8em;
-         -o-border-radius: .8em;
-            border-radius: .8em;
+    -moz-border-radius: .8em;
+    -ms-border-radius: .8em;
+    -o-border-radius: .8em;
+    border-radius: .8em;
 }
 
 .screen .rect .rect-wrap .nav-bar .nav-item-a li a {
@@ -603,10 +603,10 @@ button:hover {
     text-align: center;
     display: block;
     -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-         -o-border-radius: 10px;
-            border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -690,8 +690,8 @@ button:hover {
     left: 0;
     top: 50%;
     -webkit-transition: all .2s;
-         -o-transition: all .2s;
-            transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
     color: #fff;
 }
 
@@ -745,10 +745,10 @@ button:hover {
 
 .screen .rect .rect-wrap .screen-col-c .memember .member-person img {
     -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-         -o-border-radius: 50%;
-            border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .screen .rect .rect-wrap .screen-col-c .hello {
@@ -853,7 +853,7 @@ button:hover {
     overflow: hidden;
 }
 
-.screen .rect .rect-wrap .screen-col-c .newsshow ul li a{
+.screen .rect .rect-wrap .screen-col-c .newsshow ul li a {
     float: left;
 }
 
@@ -865,4 +865,80 @@ button:hover {
     width: 270px;
     height: 60px;
     margin: 0 auto;
+}
+
+.multiplay {
+    margin-top: 2px;
+}
+
+.multiplay ul {
+    width: 100%;
+}
+
+.multiplay ul li a{
+    display: block;
+    float: left;
+    width: 72px;
+    height: 67px;
+    border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    background-color: #fff;
+    text-align: center;
+}
+
+.multiplay .min a{
+    width: 71px;
+}
+
+.multiplay .icon {
+    margin-top: 11px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background: url(../../image/icon/bgicon.png);
+}
+
+.multiplay .item-2 {
+    background-position: 0 -44px;
+}
+
+.multiplay .item-3 {
+    background-position: 0 -88px;
+}
+
+.multiplay .item-4 {
+    background-position: 0 -132px;
+}
+
+.multiplay .item-5 {
+    background-position: 0 -176px;
+}
+
+.multiplay .item-6 {
+    background-position: 0 -220px;
+}
+
+.multiplay .icon.item-7 {
+    background: url(../../image/icon/icon7.jpg);
+}
+
+.multiplay .item-8 {
+    background-position: 0 -308px;
+}
+
+.multiplay .item-9 {
+    background-position: 0 -352px;
+}
+
+.multiplay .item-10 {
+    background-position: 0 -396px;
+}
+
+.multiplay .item-11 {
+    background-position: 0 -440px;
+}
+
+.multiplay .item-12 {
+    background-position: 0 -484px;
 }
