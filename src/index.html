@@ -5,6 +5,26 @@
     <meta charset="utf-8">
     <title>淘宝网 - 淘！我喜欢</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style type="text/css">
+    @font-face {
+        font-family: iconfont;
+        src: url(//at.alicdn.com/t/font_1475912685_3576825.eot);
+        src: url(//at.alicdn.com/t/font_1475912685_3576825.eot?#iefix) format('embedded-opentype'), 
+             url(//at.alicdn.com/t/font_1475912685_3576825.woff) format('woff'), 
+             url(//at.alicdn.com/t/font_1475912685_3576825.ttf) format('truetype'),
+             url(//at.alicdn.com/t/font_1475912685_3576825.svg#iconfont) format('svg')
+    }
+    
+    .service-icon {
+        font-family: iconfont!important;
+        font-size: 14px;
+        font-style: normal;
+        display: inline-block;
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+    </style>
 </head>
 
 <body>
@@ -543,74 +563,96 @@
                     </div>
                     <div class="multiplay">
                         <ul>
-                            <li class="firstline min">
-                                <a href="#">
+                            <li class="firstline min iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-1"></span>
                                     <p>充话费</p>
                                 </a>
+                                <div class="flwrap multi-one" style="visibility: hidden;">
+                                    <ul>
+                                        <li><a href="#" class="color-o">充话费</a></li>
+                                        <li><a href="#">充流量</a></li>
+                                        <li><a href="#">充固话</a></li>
+                                        <li><a href="#">充带宽</a></li>
+                                    </ul>
+                                    <span class="close">&times;</span>
+                                    <div class="fl-wrap phone">
+                                        <input type="text" name="phonenumber" placeholder="请输入手机号码">
+                                        <span class="flicon fl-wrap-tel" title="点击查看充值历史"></span>
+                                    </div>
+                                    <div class="fl-wrap account">
+                                        <input id="payacount" class="acount-num" value="50元" readonly="readonly">
+                                        <span class="flicon fl-wrap-aco"></span>
+                                    </div>
+                                    <p class="flwrap-txtshow">售价 ¥
+                                        <span class="color-o">49-49.8</span>
+                                    </p>
+                                    <button type="button">立刻充值</button>
+                                    <a href="#" class="noto">话费充50抢5</a>
+                                </div>
                             </li>
-                            <li class="firstline min">
-                                <a href="#">
+                            <li class="firstline min iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-2"></span>
                                     <p>游戏</p>
                                 </a>
                             </li>
-                            <li class="firstline">
-                                <a href="#">
+                            <li class="firstline iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-3"></span>
                                     <p>旅行</p>
                                 </a>
                             </li>
-                            <li class="firstline">
-                                <a href="#">
+                            <li class="firstline iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-4"></span>
                                     <p>车险</p>
                                 </a>
                             </li>
-                            <li class="min">
-                                <a href="#">
+                            <li class="min iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-5"></span>
                                     <p>彩票</p>
                                 </a>
                             </li>
-                            <li class="min">
-                                <a href="#">
+                            <li class="min iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-6"></span>
                                     <p>电影</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-7"></span>
                                     <p>点外卖</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-8"></span>
                                     <p>理财</p>
                                 </a>
                             </li>
-                            <li class="min">
-                                <a href="#">
+                            <li class="min iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-9"></span>
                                     <p>找服务</p>
                                 </a>
                             </li>
-                            <li class="min">
-                                <a href="#">
+                            <li class="min iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-10"></span>
                                     <p>音乐</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-11"></span>
                                     <p>水电煤</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="iconwrap">
+                                <a href="#" class="muticon">
                                     <span class="icon item-12"></span>
                                     <p>火车票</p>
                                 </a>
@@ -622,6 +664,126 @@
         </div>
         <!--左边导航-->
         <div class="multinav">
+            <div class="name">
+                <a href="#">
+                    <h3>主体市场</h3>
+                    <i class="icon"></i>
+                </a>
+            </div>
+            <ul class="nav-service">
+                <li class="row row-1">
+                    <i class="service-icon">&#xe602;</i>
+                    <a href="#">女装</a> /
+                    <a href="#">男装</a> /
+                    <a href="#">内衣</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-2">
+                    <i class="service-icon"></i>
+                    <a href="#">鞋靴</a> /
+                    <a href="#">箱包</a> /
+                    <a href="#">配件</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-3">
+                    <i class="service-icon"></i>
+                    <a href="#">童装玩具</a> /
+                    <a href="#">孕产</a> /
+                    <a href="#">用品</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-4">
+                    <i class="service-icon"></i>
+                    <a href="#">家电</a> /
+                    <a href="#">数码</a> /
+                    <a href="#">手机</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-5">
+                    <i class="service-icon"></i>
+                    <a href="#">美妆</a> /
+                    <a href="#">洗护</a> /
+                    <a href="#">保健品</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-6">
+                    <i class="service-icon"></i>
+                    <a href="#">珠宝</a> /
+                    <a href="#">眼镜</a> /
+                    <a href="#">手表</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-7">
+                    <i class="service-icon"></i>
+                    <a href="#">运动</a> /
+                    <a href="#">户外</a> /
+                    <a href="#">乐器</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-8">
+                    <i class="service-icon"></i>
+                    <a href="#">游戏</a> /
+                    <a href="#">动漫</a> /
+                    <a href="#">影视</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-9">
+                    <i class="service-icon"></i>
+                    <a href="#">美食</a> /
+                    <a href="#">生鲜</a> /
+                    <a href="#">零食</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-10">
+                    <i class="service-icon"></i>
+                    <a href="#">鲜花</a> /
+                    <a href="#">宠物</a> /
+                    <a href="#">农资</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-11">
+                    <i class="service-icon"></i>
+                    <a href="#">房产</a> /
+                    <a href="#">装修</a> /
+                    <a href="#">建材</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-12">
+                    <i class="service-icon"></i>
+                    <a href="#">家具</a> /
+                    <a href="#">家饰</a> /
+                    <a href="#">家纺</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-13">
+                    <i class="service-icon"></i>
+                    <a href="#">汽车</a> /
+                    <a href="#">二手车</a> /
+                    <a href="#">用品</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-14">
+                    <i class="service-icon"></i>
+                    <a href="#">办公</a> /
+                    <a href="#">DIY</a> /
+                    <a href="#">五金电子</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-15">
+                    <i class="service-icon"></i>
+                    <a href="#">百货</a> /
+                    <a href="#">餐厨</a> /
+                    <a href="#">家庭保健</a>
+                    <i class="icon">〉</i>
+                </li>
+                <li class="row row-16">
+                    <i class="service-icon"></i>
+                    <a href="#">学习</a> /
+                    <a href="#">卡券</a> /
+                    <a href="#">本地服务</a>
+                    <i class="icon">〉</i>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="nav nav1">

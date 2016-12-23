@@ -30,6 +30,15 @@ img {
     width: 1190px;
 }
 
+.screen .rect:after,
+.screen:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
 .cupbox {
     background-color: #fff;
 }
@@ -80,7 +89,7 @@ a:active {
 }
 
 a:hover {
-    color: #ff4400;
+    color: #f40;
 }
 
 .header1 .wrapper a:hover,
@@ -105,6 +114,7 @@ a:hover {
 }
 
 .color-o {
+    font-family: verdana, arial;
     color: #f22e00 !important;
 }
 
@@ -162,10 +172,10 @@ a:hover {
 
 #userinfo .toggle img {
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
 }
 
 #userinfo .toggle .account-nav {
@@ -184,10 +194,10 @@ a:hover {
     border: 1px #ddf6be solid;
     background-color: #e9fecf;
     -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+       -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+         -o-border-radius: 2px;
+            border-radius: 2px;
 }
 
 #userinfo .header-user-split {
@@ -544,10 +554,10 @@ button:hover {
     background-color: #f40;
     color: #fff !important;
     -webkit-border-radius: .8em;
-    -moz-border-radius: .8em;
-    -ms-border-radius: .8em;
-    -o-border-radius: .8em;
-    border-radius: .8em;
+       -moz-border-radius: .8em;
+        -ms-border-radius: .8em;
+         -o-border-radius: .8em;
+            border-radius: .8em;
 }
 
 .screen .rect .rect-wrap .nav-bar .nav-item-a li a {
@@ -603,10 +613,10 @@ button:hover {
     text-align: center;
     display: block;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
+       -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+            border-radius: 10px;
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -690,8 +700,8 @@ button:hover {
     left: 0;
     top: 50%;
     -webkit-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
+         -o-transition: all .2s;
+            transition: all .2s;
     color: #fff;
 }
 
@@ -745,10 +755,10 @@ button:hover {
 
 .screen .rect .rect-wrap .screen-col-c .memember .member-person img {
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
 }
 
 .screen .rect .rect-wrap .screen-col-c .hello {
@@ -875,7 +885,12 @@ button:hover {
     width: 100%;
 }
 
-.multiplay ul li a{
+.multiplay .iconwrap {
+    position: relative;
+    // height: 18px;
+}
+
+.multiplay ul .iconwrap {
     display: block;
     float: left;
     width: 72px;
@@ -886,7 +901,7 @@ button:hover {
     text-align: center;
 }
 
-.multiplay .min a{
+.multiplay ul .min.iconwrap {
     width: 71px;
 }
 
@@ -941,4 +956,195 @@ button:hover {
 
 .multiplay .item-12 {
     background-position: 0 -484px;
+}
+
+.multiplay .flwrap {
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding-left: 15px;
+    width: 273px;
+    height: 155px;
+    border: 1px solid #f40;
+    text-align: left;
+    color: #666;
+}
+
+.multiplay .flwrap li {
+    display: inline-block;
+    padding: 3px 10px;
+}
+
+.multiplay .flwrap .close {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.multiplay .flwrap .close:hover {
+    background: #eee;
+    color: #000;
+}
+
+.multiplay .flwrap ul {
+    margin: 7px 0;
+}
+
+.multiplay .flwrap .fl-wrap {
+    width: 188px;
+    height: 26px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.multiplay .flwrap .fl-wrap input {
+    width: 165px;
+    height: 18px;
+    border: 0;
+    outline: 0;
+    padding: 4px 20px 4px 3px;
+}
+
+.multiplay .flwrap .fl-wrap .flicon {
+    width: 20px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../../image/icon/bgicon2.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.multiplay .flwrap .fl-wrap.account {
+    margin-top: -1px;
+}
+
+.multiplay .flwrap .fl-wrap .fl-wrap-tel {
+    background-position: -24px 5px;
+}
+
+.multiplay .flwrap .fl-wrap .fl-wrap-tel:hover {
+    background-position: -4px 5px;
+}
+
+.multiplay .flwrap .fl-wrap .fl-wrap-aco {
+    background-position: -24px -21px;
+}
+
+.multiplay .flwrap .fl-wrap .fl-wrap-aco:hover {
+    background-position: -4px -21px;
+}
+
+.multiplay .flwrap .fl-wrap:hover {
+    border-color: #9c9c9c;
+    z-index: 1;
+}
+
+.multiplay .flwrap .acount-num {
+    height: 28px;
+    line-height: 28px;
+}
+
+#payacount {
+    cursor: default;
+}
+
+.multiplay .flwrap .flwrap-txtshow {
+    margin: 6px 0;
+    height: 17px;
+    line-height: 17px;
+    font-family: arial;
+}
+
+.multiplay .flwrap .flwrap-txtshow .color-o {
+    font-weight: 800;
+}
+
+.multiplay .flwrap button {
+    padding: 3px 10px;
+    height: 21px;
+    line-height: 21px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+         -o-border-radius: 2px;
+            border-radius: 2px;
+    font-size: 12px;
+    box-sizing: content-box;
+}
+
+.noto:hover {
+    color: inherit;
+}
+
+.screen .multinav {
+    width: 190px;
+    background-color: #ff6537;
+    color: #fff;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+}
+
+.screen .multinav .name {
+    height: 33px;
+    line-height: 33px;
+    text-indent: 10px;
+}
+
+.screen .multinav .name h3 {
+    font-size: 14px;
+}
+
+.screen .multinav a {
+    font-weight: 700;
+}
+
+.screen .multinav .name a:hover {
+    color: inherit;
+}
+
+.screen .multinav .nav-service a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.screen .multinav .nav-service {
+    height: 482px;
+    width: 100%;
+}
+
+.screen .multinav .nav-service li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    position: relative;
+}
+
+.screen .multinav .nav-service li:hover {
+    background-color: #f94a14;
+}
+
+.screen .multinav .nav-service .icon {
+    width: 12px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    right: 2px;
+    top: 2px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.screen .multinav .nav-service .service-icon {
+    display: inline-block;
+    width: 18px;
+    height: 30px;
+    float: left;
 }
