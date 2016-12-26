@@ -30,6 +30,10 @@ img {
     width: 1190px;
 }
 
+.screen {
+    position: relative;
+}
+
 .screen .rect:after,
 .screen:after {
     content: "";
@@ -597,8 +601,77 @@ button:hover {
     width: 2600px;
 }
 
+.adlunbo .ad-item li {
+    width: 520px;
+    height: 201px;
+    position: relative;
+}
+
 .screen .rect .rect-wrap .ad2 .ad-item {
-    width: 2880px;
+    width: 3120px;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col1 a {
+    width: 173px;
+    height: 100px;
+    border-left: 1px solid #f1f1f1;
+    margin-left: -1px;
+    margin-bottom: 1px;
+    float: left;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col1 a:first-child {
+    height: auto;
+    border: 0;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col1 img {
+    width: 173px;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col2 a,
+.screen .rect .rect-wrap .ad2 .ad-col3 a {
+    width: 130px;
+    height: 200px;
+    border-left: 1px solid #f1f1f1;
+    margin-left: -1px;
+    margin-bottom: 1px;
+    float: left;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col2 img,
+.screen .rect .rect-wrap .ad2 .ad-col3 img {
+    width: 130px;
+    float: left;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col4 a {
+    display: block;
+    padding: 5px 0;
+    height: 57px;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    width: 129px;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col5 a,
+.screen .rect .rect-wrap .ad2 .ad-col6 a {
+    display: block;
+    margin: 6px 0 0 6px;
+    height: 190px;
+    width: 251px;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+}
+
+.screen .rect .rect-wrap .ad2 .ad-col6 a {
+    margin-top: 20px;
 }
 
 .screen .rect .rect-wrap .adlunbo ul li {
@@ -687,7 +760,8 @@ button:hover {
 .screen .rect .rect-wrap .screen-col-a .admiddle strong * {
     font-style: normal;
     font-weight: normal;
-    line-height: 32px;
+    padding-top: 10px;
+    line-height: 18px;
 }
 
 .screen .rect .rect-wrap .screen-col-a .admiddle strong i {
@@ -698,7 +772,7 @@ button:hover {
     width: 520px;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 44%;
     -webkit-transition: all .2s;
          -o-transition: all .2s;
             transition: all .2s;
@@ -1083,20 +1157,36 @@ button:hover {
 }
 
 .screen .multinav {
+    position: absolute;
     width: 190px;
-    background-color: #ff6537;
     color: #fff;
     font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.screen .multinav-bd {
+    background-color: #ff6537;
 }
 
 .screen .multinav .name {
     height: 33px;
     line-height: 33px;
     text-indent: 10px;
+    position: relative;
 }
 
 .screen .multinav .name h3 {
     font-size: 14px;
+}
+
+.screen .multinav .name .service-icon {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .screen .multinav a {
@@ -1136,7 +1226,7 @@ button:hover {
     height: 30px;
     position: absolute;
     display: block;
-    right: 2px;
+    right: 6px;
     top: 2px;
     font-style: normal;
     font-weight: 700;
@@ -1147,4 +1237,175 @@ button:hover {
     width: 18px;
     height: 30px;
     float: left;
+    color: #ff8c58;
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.multinav .mutinav-ad {
+    margin-top: -1px;
+}
+
+.multinav .nav-panel {
+    position: absolute;
+    left: 188px;
+    top: 33px;
+    padding-left: 18px;
+    border: 2px solid#f94a14;
+    width: 692px;
+    height: 519px;
+    color: #666;
+    font-weight: normal;
+    background-color: #fff;
+}
+
+.screen .multinav .nav-panel a,
+.screen .multinav .nav-panel a:hover {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.multinav .nav-panel .panel-col1 {
+    width: 427px;
+    height: 475px;
+    padding-top: 25px;
+    padding-right: 10px;
+    background-color: white;
+}
+
+.multinav .nav-panel .nav-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.screen .multinav .nav-panel li,
+.screen .multinav .nav-panel li:hover {
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+    background-color: inherit;
+    display: block;
+    float: left;
+    padding: 0;
+    margin-right: 12px;
+    margin-left: 1px;
+}
+
+.nav-panel .panel-col1 .row-hd {
+    height: 28px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    width: 100%;
+}
+
+.row-hd h4 {
+    position: absolute;
+    bottom: 4px;
+    left: 28px;
+    font-size: 14px;
+}
+
+.row-hd .more {
+    position: absolute;
+    bottom: 4px;
+    right: 2px;
+}
+
+.nav-panel ul {
+    padding: 8px 0;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.nav-panel ul:before,
+.nav-panel ul:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.multinav .nav-panel .panel-col2 {
+    position: absolute;
+    left: 455px;
+    top: 0;
+    width: 240px;
+    height: 479px;
+    padding: 32px 0 7px 15px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.nav-panel .panel-col2 h3 {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    position: absolute;
+    top: 20px;
+    right: 87px;
+}
+
+.nav-panel .panel-col2 h3:before,
+.nav-panel .panel-col2 h3:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    border: 1px solid #e6e6e6;
+    width: 45px;
+    top: 50%;
+    display: block;
+}
+
+.nav-panel .panel-col2 h3:before {
+    left: -47px;
+}
+
+.nav-panel .panel-col2 h3:after {
+    right: -47px;
+}
+
+.nav-panel .panel-col2 .service-icon {
+    color: #dd4410;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    vertical-align: text-top;
+}
+
+.panel-col2 .col-bd {
+    margin-top: 10px;
+}
+
+.panel-col2 .recbao {
+    margin-top: 17px;
+}
+
+.panel-col2 .recbao a {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    height: 110px;
+    margin-right: 10px;
+}
+
+.panel-col2 .recbao p {
+    position: absolute;
+    height: 24px;
+    line-height: 24px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ccffffff", endColorstr="#ccffffff", GradientType=0);
+}
+
+.panel-col2 .recbao img {
+    width: 110px;
+    height: 110px;
 }
