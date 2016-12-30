@@ -23,6 +23,11 @@ img {
     border: 0;
 }
 
+.header1 .wrapper {
+    height: 35px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
 .header1 .wrapper,
 .cup,
 .screen {
@@ -73,7 +78,8 @@ ul {
 
 .header1 .wrapper .nav-icon {
     width: 12px;
-    height: 35px;
+    height: 36px;
+    line-height: 36px;
     display: inline-block;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -101,22 +107,24 @@ a:hover {
     color: #f22e00;
 }
 
-#message-unread .nav-icon {
-    background-image: url(../../image/icon/message-unread.png);
-}
-
-#shoppingcar .nav-icon {
-    background-image: url(../../image/icon/shoppingcar.png);
-}
-
-#myfavorite .nav-icon {
-    background-image: url(../../image/icon/myfavorite.png);
-}
-
-#sitenav .nav-icon {
-    background-image: url(../../image/icon/sitenav.png);
-}
-
+// #message-unread .nav-icon {
+//     background-image: url(../../image/icon/message-unread.png);
+// }
+// #shoppingcar .nav-icon {
+//     background-image: url(../../image/icon/shoppingcar.png);
+// }
+// #myfavorite .nav-icon {
+//     background-image: url(../../image/icon/myfavorite.png);
+// }
+// #myfavorite .nav-icon {
+//     background-image: url(../../image/icon/myfavorite.png);
+// }
+// #myfavorite .nav-icon.hover {
+//     background-image: url(../../image/icon/myfavorite-highlight.png);
+// }
+// #sitenav .nav-icon {
+//     background-image: url(../../image/icon/sitenav.png);
+// }
 .color-o {
     font-family: verdana, arial;
     color: #f22e00 !important;
@@ -151,11 +159,32 @@ a:hover {
 
 .header1 .toggle {
     position: absolute;
-    top: 100%;
+    top: 35px;
+    left: -1px;
     border: 1px solid #eee;
     border-top: 0;
     padding: 8px;
     overflow: hidden;
+    background-color: #fff;
+    z-index: 500;
+}
+
+#mytaobao .toggle a,
+#myfavorite .toggle a,
+#salescenter .toggle a,
+#contactservice .toggle a {
+    display: block;
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+#mytaobao .toggle a:hover,
+#myfavorite .toggle a:hover,
+#salescenter .toggle a:hover,
+#contactservice .toggle a:hover {
+    background-color: #f5f5f5;
+    color: inherit;
 }
 
 #userinfo .toggle {
@@ -204,6 +233,14 @@ a:hover {
             border-radius: 2px;
 }
 
+#myfavorite .toggle {
+    padding-left: 0;
+    padding-right: 0;
+    width: 70px;
+    text-align: center;
+    line-height: 2.5;
+}
+
 #userinfo .header-user-split {
     margin: 10px 0;
     height: 1px;
@@ -248,7 +285,7 @@ a:hover {
 
 #sitenav .toggle {
     padding: 0;
-    right: 0;
+    left: -1096px;
     width: 1188px;
 }
 
@@ -258,6 +295,7 @@ a:hover {
 
 #sitenav .toggle .col {
     width: 283px;
+    height: 404px;
     border-left: 1px solid #eee;
     padding: 6px;
 }
@@ -275,6 +313,7 @@ a:hover {
 #sitenav .toggle ul li a:link,
 #sitenav .toggle ul li a:visited,
 #sitenav .toggle ul li a:active {
+    box-sizing: content-box;
     color: #000;
     padding: 8px;
 }
@@ -381,7 +420,14 @@ a:hover {
     background-color: #ff5400;
 }
 
-.header2 .search-item .search-item-tamll.active {
+.header2 .search-item .search-item-tmall.active {
+    background-color: #c60000;
+}
+
+.header2 .active-tmall .search-button,
+.header2 .active-tmall .search-input-fileds,
+.header2 .active-tmall button,
+.header2 .active-tmall button:hover {
     background-color: #c60000;
 }
 
@@ -437,11 +483,34 @@ button:hover {
     outline: 0;
     width: 472px;
     height: 22px;
-    padding: 6px 0;
+    padding: 6px 0 6px 6px;
+}
+
+.hide {
+    display: none;
 }
 
 .cup .header2 .searchcombo {
     background-color: #fff;
+    position: relative;
+}
+
+.searchcombo .search-placeholder {
+    position: absolute;
+    left: 6px;
+    top: 10px;
+    width: 450px;
+    height: 0;
+    color: #9c9c9c;
+}
+
+.searchcombo .search-placeholder,
+.searchcombo .search-placeholder label {
+    cursor: text;
+}
+
+.search-placeholder label {
+    padding-left: 4px;
 }
 
 .cup .header2 .searchwrap .search-icon {
