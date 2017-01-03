@@ -38,6 +38,7 @@
     }
     </style>
     <script src="js/lib/jquery-1.10.1.min.js"></script>
+    <script src="js/lib/require.js" defer async="true" data-main="js/main"></script>
 </head>
 
 <body>
@@ -349,672 +350,687 @@
                     </div>
                     <div class="search-icon">
                         <span class="search-imgsearch"></span>
-                    </div>
-                    <div class="search-app">
-                        <a href="#" class="color-o">狗窝</a>
-                        <a href="#">电脑包</a>
-                        <a href="#">狗粮</a>
-                        <a href="#">无线鼠标</a>
-                        <a href="#">机械键盘</a>
-                        <a href="#" class="color-o">双人床</a>
-                        <a href="#">鼠标垫</a>
-                        <a href="#">浴缸</a>
-                        <a href="#">书柜</a>
-                        <a href="#">电脑</a>
-                        <a href="#">洗发水</a>
-                        <a href="#">猫粮</a>
-                        <a href="#">笔记本</a>
-                        <a href="#" class="f-r">更多&gt;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="extra-phone">
-                <div class="close">
-                    <a href="#">&times;</a>
-                </div>
-                <div class="content">
-                    <a href="#">
-                        <span class="color-o">手机淘宝</span>
-                        <img src="../image/icon/taobaophone.png" style="width: 80px;height: 80px;">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="screen">
-        <div class="rect">
-            <div class="rect-wrap">
-                <!--上边导航-->
-                <div class="nav-bar">
-                    <ul class="nav-item-a">
-                        <li><a href="#" class="color-o">天猫</a></li>
-                        <li><a href="#" class="color-o">聚划算</a></li>
-                        <li><a href="#" class="color-o">天猫超市</a></li>
-                    </ul>
-                    <ul class="nav-item-b">
-                        <li class="nav-pipe">|</li>
-                        <li><a href="#">淘抢购</a></li>
-                        <li><a href="#">电器城</a></li>
-                        <li><a href="#">司法拍卖</a></li>
-                        <li><a href="">中国质造</a></li>
-                        <li><a href="">特色中国</a></li>
-                    </ul>
-                    <ul class="nav-item-c">
-                        <li class="nav-pipe">|</li>
-                        <li><a href="">飞猪旅行</a></li>
-                        <li><a href="">智能生活</a></li>
-                        <li><a href="">苏宁易购</a></li>
-                    </ul>
-                </div>
-                <!--中间部分-->
-                <div class="screen-col-a f-l">
-                    <div class="ad1 adlunbo">
-                        <ul class="ad-item">
-                            <li>
-                                <a href="#"><img src="../image/carousel/ad1-1.png"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="../image/carousel/ad1-2.jpg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="../image/carousel/ad1-3.png"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="../image/carousel/ad1-4.png"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="../image/carousel/ad1-5.png"></a>
-                            </li>
-                        </ul>
-                        <ul class="lunbo-nav">
-                            <li>
-                                <a href="#" class="select"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                        <div class="turnLorR">
-                            <a href="#" class="left f-l">&lt;</a>
-                            <a href="#" class="right f-r">&gt;</a>
+                                </div>
+                                <div class="search-app">
+                                    <a href="#" class="color-o">狗窝</a>
+                                    <a href="#">电脑包</a>
+                                    <a href="#">狗粮</a>
+                                    <a href="#">无线鼠标</a>
+                                    <a href="#">机械键盘</a>
+                                    <a href="#" class="color-o">双人床</a>
+                                    <a href="#">鼠标垫</a>
+                                    <a href="#">浴缸</a>
+                                    <a href="#">书柜</a>
+                                    <a href="#">电脑</a>
+                                    <a href="#">洗发水</a>
+                                    <a href="#">猫粮</a>
+                                    <a href="#">笔记本</a>
+                                    <a href="#" class="f-r">更多&gt;</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="adshow">
-                            <img src="../image/icon/adicon.png">
+                        <div class="extra-phone">
+                            <div class="close" data-target="extra-phone">
+                                <a href="#">&times;</a>
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    <span class="color-o">手机淘宝</span>
+                                    <img src="../image/icon/taobaophone.png" style="width: 80px;height: 80px;">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="admiddle">
-                        <span>天猫必逛</span>
-                        <em>热门品牌，天天上天猫！</em>
-                        <strong class="f-r">
+                </div>
+                <div class="screen">
+                    <div class="rect">
+                        <div class="rect-wrap">
+                            <!--上边导航-->
+                            <div class="nav-bar">
+                                <ul class="nav-item-a">
+                                    <li><a href="#" class="color-o">天猫</a></li>
+                                    <li><a href="#" class="color-o">聚划算</a></li>
+                                    <li><a href="#" class="color-o">天猫超市</a></li>
+                                </ul>
+                                <ul class="nav-item-b">
+                                    <li class="nav-pipe">|</li>
+                                    <li><a href="#">淘抢购</a></li>
+                                    <li><a href="#">电器城</a></li>
+                                    <li><a href="#">司法拍卖</a></li>
+                                    <li><a href="">中国质造</a></li>
+                                    <li><a href="">特色中国</a></li>
+                                </ul>
+                                <ul class="nav-item-c">
+                                    <li class="nav-pipe">|</li>
+                                    <li><a href="">飞猪旅行</a></li>
+                                    <li><a href="">智能生活</a></li>
+                                    <li><a href="">苏宁易购</a></li>
+                                </ul>
+                            </div>
+                            <!--中间部分-->
+                            <div class="screen-col-a f-l">
+                                <div class="ad1 adlunbo">
+                                    <ul class="ad-item">
+                                        <li>
+                                            <a href="#"><img src="../image/carousel/ad1-1.png"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="../image/carousel/ad1-2.jpg"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="../image/carousel/ad1-3.png"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="../image/carousel/ad1-4.png"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="../image/carousel/ad1-5.png"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="lunbo-nav">
+                                        <li class="select">
+                                            <a href="#"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                    </ul>
+                                    <div class="turnLorR" style="display: none;">
+                                        <a href="#" class="left f-l">&lt;</a>
+                                        <a href="#" class="right f-r">&gt;</a>
+                                    </div>
+                                    <div class="adshow">
+                                        <img src="../image/icon/adicon.png">
+                                    </div>
+                                </div>
+                                <div class="admiddle">
+                                    <span>天猫必逛</span>
+                                    <em>热门品牌，天天上天猫！</em>
+                                    <strong class="f-r">
                             <i>1</i>/6
                         </strong>
-                    </div>
-                    <div class="ad2 adlunbo">
-                        <ul class="ad-item">
-                            <li class="ad-col1">
-                                <a href="#"><img src="../image/carousel/2/1-a.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/1-b.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/1-c.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/1-d.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/1-e.jpg"></a>
-                            </li>
-                            <li class="ad-col2">
-                                <a href="#"><img src="../image/carousel/2/2-a.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/2-b.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/2-c.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/2-d.jpg"></a>
-                            </li>
-                            <li class="ad-col3">
-                                <a href="#"><img src="../image/carousel/2/3-a.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/3-b.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/3-c.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/3-d.jpg"></a>
-                            </li>
-                            <li class="ad-col4">
-                                <a href="#"><img src="../image/carousel/2/4-a.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-b.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-c.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-d.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-e.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-f.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-g.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-h.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-i.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-j.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-k.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/4-l.jpg"></a>
-                            </li>
-                            <li class="ad-col5">
-                                <a href="#"><img src="../image/carousel/2/5-a.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/5-b.jpg"></a>
-                            </li>
-                            <li class="ad-col6">
-                                <a href="#"><img src="../image/carousel/2/6-a.jpg"></a>
-                                <a href="#"><img src="../image/carousel/2/6-b.jpg"></a>
-                            </li>
-                        </ul>
-                        <div class="turnLorR">
-                            <a href="#" class="left f-l">&lt;</a>
-                            <a href="#" class="right f-r">&gt;</a>
-                        </div>
-                        <ul class="lunbo-nav">
-                            <li>
-                                <a href="#" class="select"><img src=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--右边信息-->
-                <div class="screen-col-b f-l">
-                    <div>
-                        <a href="#"><img src="../image/adshow.png"></a>
-                    </div>
-                    <div class="hot">
-                        <span>今日特卖</span>
-                    </div>
-                    <div>
-                        <a href="#"><img src="../image/TB1.jpg"></a>
-                    </div>
-                </div>
-                <div class="screen-col-c f-l">
-                    <div class="memember">
-                        <div class="member-person">
-                            <a href="#">
-                                <img src="../image/icon/getAvatar6060.jpg">
-                            </a>
-                            <p class="hello">
-                                Hi!<span>深蓝孩</span>
-                            </p>
-                            <p class="tbhy">
-                                <a href="#">
-                                    <span class="tbhy-icon"></span>
-                                    <span class="color-o">领淘金币抵押</span>
-                                </a>
-                                或去
-                                <a href="#" class="color-o">会员俱乐部</a>
-                            </p>
-                        </div>
-                        <div class="member-btn">
-                            <a href="#" class="login">登录</a>
-                            <a href="#" class="register">注册</a>
-                            <a href="#" class="opshop">开店</a>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <ul class="nav">
-                            <li><a href="#">公告</a></li>
-                            <li><a href="#">规则</a></li>
-                            <li><a href="#">论坛</a></li>
-                            <li><a href="#">安全</a></li>
-                            <li><a href="#">公益</a></li>
-                        </ul>
-                        <div class="newsshow">
-                            <ul class="news-first">
-                                <li><a href="#" class="color-o">阿里首席平台治理官郑俊芳当选年度"质量人物"</a></li>
-                                <li><a href="#">阿里招人工智能训练师</a></li>
-                                <li><a href="#">第二届阿里年货节启动</a></li>
-                            </ul>
-                            <ul class="news-second hide">
-                                <li><a href="#">不正当谋利规则变更</a></li>
-                                <li><a href="#">淘宝亲宝贝市场管理规定</a></li>
-                                <li><a href="#" class="color-o">淘宝价格发布规范变更</a></li>
-                                <li><a href="#">店铺相关规则调整变更</a></li>
-                            </ul>
-                            <ul class="news-third hide">
-                                <li><a href="#" class="color-o">双十二开始报名啦</a></li>
-                                <li><a href="#">淘宝论坛招募志愿者</a></li>
-                                <li><a href="#">名师一刻-5个亿的秘密</a></li>
-                                <li><a href="#">十八纸颠覆家具想象</a></li>
-                            </ul>
-                            <ul class="news-fourth hide">
-                                <li><a href="#" class="color-o">首次揭秘打假特战队—</a></li>
-                                <li><a href="#" class="color-o">—《刀尖上的舞者》</a></li>
-                                <li><a href="#" class="color-o">差点我都信了！</a></li>
-                                <li><a href="#" class="color-o">重交“保证金”？</a></li>
-                            </ul>
-                            <ul class="news-third hide">
-                                <li><a href="#">大众评审乡村医院开建</a></li>
-                                <li><a href="#">闲鱼公益上线招募NGO</a></li>
-                                <li><a href="#">阿里与残联出助残政策</a></li>
-                                <li><a href="#" class="color-o">公益宝贝卖家发票索取</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="multiplay">
-                        <ul>
-                            <li class="firstline min iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-1"></span>
-                                    <p>充话费</p>
-                                </a>
-                                <div class="flwrap multi-one" style="display: none;">
-                                    <ul>
-                                        <li><a href="#" class="color-o">充话费</a></li>
-                                        <li><a href="#">充流量</a></li>
-                                        <li><a href="#">充固话</a></li>
-                                        <li><a href="#">充带宽</a></li>
-                                    </ul>
-                                    <span class="close">&times;</span>
-                                    <div class="fl-wrap phone">
-                                        <input type="text" name="phonenumber" placeholder="请输入手机号码">
-                                        <span class="flicon fl-wrap-tel" title="点击查看充值历史"></span>
-                                    </div>
-                                    <div class="fl-wrap account">
-                                        <input id="payacount" class="acount-num" value="50元" readonly="readonly">
-                                        <span class="flicon fl-wrap-aco"></span>
-                                    </div>
-                                    <p class="flwrap-txtshow">售价 ¥
-                                        <span class="color-o">49-49.8</span>
-                                    </p>
-                                    <button type="button">立刻充值</button>
-                                    <a href="#" class="noto">话费充50抢5</a>
                                 </div>
-                            </li>
-                            <li class="firstline min iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-2"></span>
-                                    <p>游戏</p>
-                                </a>
-                            </li>
-                            <li class="firstline iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-3"></span>
-                                    <p>旅行</p>
-                                </a>
-                            </li>
-                            <li class="firstline iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-4"></span>
-                                    <p>车险</p>
-                                </a>
-                            </li>
-                            <li class="min iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-5"></span>
-                                    <p>彩票</p>
-                                </a>
-                            </li>
-                            <li class="min iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-6"></span>
-                                    <p>电影</p>
-                                </a>
-                            </li>
-                            <li class="iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-7"></span>
-                                    <p>点外卖</p>
-                                </a>
-                            </li>
-                            <li class="iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-8"></span>
-                                    <p>理财</p>
-                                </a>
-                            </li>
-                            <li class="min iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-9"></span>
-                                    <p>找服务</p>
-                                </a>
-                            </li>
-                            <li class="min iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-10"></span>
-                                    <p>音乐</p>
-                                </a>
-                            </li>
-                            <li class="iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-11"></span>
-                                    <p>水电煤</p>
-                                </a>
-                            </li>
-                            <li class="iconwrap">
-                                <a href="#" class="muticon">
-                                    <span class="icon item-12"></span>
-                                    <p>火车票</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--左边导航-->
-        <div class="multinav">
-            <div class="multinav-bd">
-                <div class="name">
-                    <a href="#">
-                        <h3>主体市场</h3>
-                        <i class="service-icon icon f-r">&#xe621;</i>
-                    </a>
-                </div>
-                <ul class="nav-service">
-                    <li class="row row-1">
-                        <i class="service-icon">&#xe602;</i>
-                        <a href="#">女装</a> /
-                        <a href="#">男装</a> /
-                        <a href="#">内衣</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-2">
-                        <i class="service-icon">&#xe604;</i>
-                        <a href="#">鞋靴</a> /
-                        <a href="#">箱包</a> /
-                        <a href="#">配件</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-3">
-                        <i class="service-icon">&#xe60b;</i>
-                        <a href="#">童装玩具</a> /
-                        <a href="#">孕产</a> /
-                        <a href="#">用品</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-4">
-                        <i class="service-icon">&#xe603;</i>
-                        <a href="#">家电</a> /
-                        <a href="#">数码</a> /
-                        <a href="#">手机</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-5">
-                        <i class="service-icon">&#xe607;</i>
-                        <a href="#">美妆</a> /
-                        <a href="#">洗护</a> /
-                        <a href="#">保健品</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-6">
-                        <i class="service-icon">&#xe606;</i>
-                        <a href="#">珠宝</a> /
-                        <a href="#">眼镜</a> /
-                        <a href="#">手表</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-7">
-                        <i class="service-icon">&#xe605;</i>
-                        <a href="#">运动</a> /
-                        <a href="#">户外</a> /
-                        <a href="#">乐器</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-8">
-                        <i class="service-icon">&#xe620;</i>
-                        <a href="#">游戏</a> /
-                        <a href="#">动漫</a> /
-                        <a href="#">影视</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-9">
-                        <i class="service-icon">&#xe60a;</i>
-                        <a href="#">美食</a> /
-                        <a href="#">生鲜</a> /
-                        <a href="#">零食</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-10">
-                        <i class="service-icon">&#xe60e;</i>
-                        <a href="#">鲜花</a> /
-                        <a href="#">宠物</a> /
-                        <a href="#">农资</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-11">
-                        <i class="service-icon">&#xe609;</i>
-                        <a href="#">房产</a> /
-                        <a href="#">装修</a> /
-                        <a href="#">建材</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-12">
-                        <i class="service-icon">&#xe608;</i>
-                        <a href="#">家具</a> /
-                        <a href="#">家饰</a> /
-                        <a href="#">家纺</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-13">
-                        <i class="service-icon">&#xe60f;</i>
-                        <a href="#">汽车</a> /
-                        <a href="#">二手车</a> /
-                        <a href="#">用品</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-14">
-                        <i class="service-icon">&#xe601;</i>
-                        <a href="#">办公</a> /
-                        <a href="#">DIY</a> /
-                        <a href="#">五金电子</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-15">
-                        <i class="service-icon">&#xe600;</i>
-                        <a href="#">百货</a> /
-                        <a href="#">餐厨</a> /
-                        <a href="#">家庭保健</a>
-                        <i class="icon">〉</i>
-                    </li>
-                    <li class="row row-16">
-                        <i class="service-icon">&#xe61f;</i>
-                        <a href="#">学习</a> /
-                        <a href="#">卡券</a> /
-                        <a href="#">本地服务</a>
-                        <i class="icon">〉</i>
-                    </li>
-                </ul>
-            </div>
-            <div class="multinav-ad">
-                <img src="../image/sucai/ic.jpg" alt="ad" style="width: 190px;height: 40px;">
-            </div>
-            <div class="nav-panel navpl-1 hide">
-                <div class="panel-col1">
-                    <div class="panel-row">
-                        <div class="row-hd">
-                            <a href="#">
-                                <img src="../image/nav/a-1.jpg" class="nav-icon">
-                                <h4>女装</h4>
-                            </a>
-                            <a href="#" class="more">更多〉</a>
+                                <div class="ad2 adlunbo">
+                                    <ul class="ad-item">
+                                        <li class="ad-col1">
+                                            <a href="#"><img src="../image/carousel/2/1-a.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/1-b.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/1-c.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/1-d.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/1-e.jpg"></a>
+                                        </li>
+                                        <li class="ad-col2">
+                                            <a href="#"><img src="../image/carousel/2/2-a.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/2-b.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/2-c.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/2-d.jpg"></a>
+                                        </li>
+                                        <li class="ad-col3">
+                                            <a href="#"><img src="../image/carousel/2/3-a.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/3-b.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/3-c.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/3-d.jpg"></a>
+                                        </li>
+                                        <li class="ad-col4">
+                                            <a href="#"><img src="../image/carousel/2/4-a.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-b.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-c.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-d.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-e.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-f.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-g.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-h.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-i.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-j.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-k.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/4-l.jpg"></a>
+                                        </li>
+                                        <li class="ad-col5">
+                                            <a href="#"><img src="../image/carousel/2/5-a.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/5-b.jpg"></a>
+                                        </li>
+                                        <li class="ad-col6">
+                                            <a href="#"><img src="../image/carousel/2/6-a.jpg"></a>
+                                            <a href="#"><img src="../image/carousel/2/6-b.jpg"></a>
+                                        </li>
+                                    </ul>
+                                    <div class="turnLorR" style="display: none;">
+                                        <a href="#" class="left f-l">&lt;</a>
+                                        <a href="#" class="right f-r">&gt;</a>
+                                    </div>
+                                    <ul class="lunbo-nav">
+                                        <li class="select">
+                                            <a href="#"><img src=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--右边信息-->
+                            <div class="screen-col-b f-l">
+                                <div>
+                                    <a href="#"><img src="../image/adshow.png"></a>
+                                </div>
+                                <div class="hot">
+                                    <span>今日特卖</span>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="../image/TB1.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="screen-col-c f-l">
+                                <div class="memember">
+                                    <div class="member-person">
+                                        <a href="#">
+                                            <img src="../image/icon/getAvatar6060.jpg">
+                                        </a>
+                                        <p class="hello">
+                                            Hi!<span>深蓝孩</span>
+                                        </p>
+                                        <p class="tbhy">
+                                            <a href="#">
+                                                <span class="tbhy-icon"></span>
+                                                <span class="color-o">领淘金币抵押</span>
+                                            </a>
+                                            或去
+                                            <a href="#" class="color-o">会员俱乐部</a>
+                                        </p>
+                                    </div>
+                                    <div class="member-btn">
+                                        <a href="#" class="login">登录</a>
+                                        <a href="#" class="register">注册</a>
+                                        <a href="#" class="opshop">开店</a>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <ul class="nav">
+                                        <li class="select"><a href="#">公告</a></li>
+                                        <li><a href="#">规则</a></li>
+                                        <li><a href="#">论坛</a></li>
+                                        <li><a href="#">安全</a></li>
+                                        <li><a href="#">公益</a></li>
+                                    </ul>
+                                    <div class="newsshow">
+                                        <ul class="news-first">
+                                            <li><a href="#" class="color-o">阿里首席平台治理官郑俊芳当选年度"质量人物"</a></li>
+                                            <li><a href="#">阿里招人工智能训练师</a></li>
+                                            <li><a href="#">第二届阿里年货节启动</a></li>
+                                        </ul>
+                                        <ul class="news-second hide">
+                                            <li><a href="#">不正当谋利规则变更</a></li>
+                                            <li><a href="#">淘宝亲宝贝市场管理规定</a></li>
+                                            <li><a href="#" class="color-o">淘宝价格发布规范变更</a></li>
+                                            <li><a href="#">店铺相关规则调整变更</a></li>
+                                        </ul>
+                                        <ul class="news-third hide">
+                                            <li><a href="#" class="color-o">双十二开始报名啦</a></li>
+                                            <li><a href="#">淘宝论坛招募志愿者</a></li>
+                                            <li><a href="#">名师一刻-5个亿的秘密</a></li>
+                                            <li><a href="#">十八纸颠覆家具想象</a></li>
+                                        </ul>
+                                        <ul class="news-fourth hide">
+                                            <li><a href="#" class="color-o">首次揭秘打假特战队—</a></li>
+                                            <li><a href="#" class="color-o">—《刀尖上的舞者》</a></li>
+                                            <li><a href="#">差点我都信了！</a></li>
+                                            <li><a href="#">重交“保证金”？</a></li>
+                                        </ul>
+                                        <ul class="news-third hide">
+                                            <li><a href="#">大众评审乡村医院开建</a></li>
+                                            <li><a href="#">闲鱼公益上线招募NGO</a></li>
+                                            <li><a href="#">阿里与残联出助残政策</a></li>
+                                            <li><a href="#" class="color-o">公益宝贝卖家发票索取</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="multiplay">
+                                    <ul>
+                                        <li class="firstline min iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-1"></span>
+                                                <p>充话费</p>
+                                            </a>
+                                        </li>
+                                        <li class="firstline iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-2"></span>
+                                                <p>游戏</p>
+                                            </a>
+                                        </li>
+                                        <li class="firstline iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-3"></span>
+                                                <p>旅行</p>
+                                            </a>
+                                        </li>
+                                        <li class="firstline min iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-4"></span>
+                                                <p>车险</p>
+                                            </a>
+                                        </li>
+                                        <li class="min iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-5"></span>
+                                                <p>彩票</p>
+                                            </a>
+                                        </li>
+                                        <li class="iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-6"></span>
+                                                <p>电影</p>
+                                            </a>
+                                        </li>
+                                        <li class="iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-7"></span>
+                                                <p>点外卖</p>
+                                            </a>
+                                        </li>
+                                        <li class="iconwrap min">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-8"></span>
+                                                <p>理财</p>
+                                            </a>
+                                        </li>
+                                        <li class="min iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-9"></span>
+                                                <p>找服务</p>
+                                            </a>
+                                        </li>
+                                        <li class="iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-10"></span>
+                                                <p>音乐</p>
+                                            </a>
+                                        </li>
+                                        <li class="iconwrap">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-11"></span>
+                                                <p>水电煤</p>
+                                            </a>
+                                        </li>
+                                        <li class="iconwrap min">
+                                            <a href="#" class="muticon">
+                                                <span class="icon item-12"></span>
+                                                <p>火车票</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="flwrap multi-0" style="display: none;">
+                                        <ul>
+                                            <li><a href="#" class="color-o">充话费</a></li>
+                                            <li><a href="#">充流量</a></li>
+                                            <li><a href="#">充固话</a></li>
+                                            <li><a href="#">充带宽</a></li>
+                                        </ul>
+                                        <span class="close" data-target="multi-0">&times;</span>
+                                        <div class="fl-wrap phone">
+                                            <input type="text" name="phonenumber" placeholder="请输入手机号码">
+                                            <span class="flicon fl-wrap-tel" title="点击查看充值历史"></span>
+                                        </div>
+                                        <div class="fl-wrap account">
+                                            <input id="payacount" class="acount-num" value="50元" readonly="readonly">
+                                            <span class="flicon fl-wrap-aco"></span>
+                                            <div id="bill" style="display: none;">
+                                                <ul>
+                                                    <li class="bill-left bill-firstline"><em>100</em>元</li>
+                                                    <li class="bill-firstline"><em>10</em>元</li>
+                                                    <li class="bill-left"><em>200</em>元</li>
+                                                    <li><em>20</em>元</li>
+                                                    <li class="bill-left"><em>300</em>元</li>
+                                                    <li><em>30</em>元</li>
+                                                    <li class="bill-left"><em>500</em>元</li>
+                                                    <li class="selected"><em>50</em>元</li>
+                                                    <li class="bill-left"><em>1000</em>元</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="flwrap-txtshow">售价 ¥
+                                            <span class="color-o">49-49.8</span>
+                                        </p>
+                                        <button type="button">立刻充值</button>
+                                        <a href="#" class="noto">话费充50抢5</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <ul>
-                            <li class="color-o"><a href="#">冬新品</a></li>
-                            <li class="color-o"><a href="#">羽绒服</a></li>
-                            <li><a href="#">连衣裙</a></li>
-                            <li class="color-o"><a href="#">毛呢外套</a></li>
-                            <li><a href="#">大码女装</a></li>
-                            <li><a href="#">毛衣</a></li>
-                            <li class="color-o"><a href="#">裤子</a></li>
-                            <li><a href="#">毛针织裤</a></li>
-                            <li class="color-o"><a href="#">棉衣/棉服</a></li>
-                            <li><a href="#">皮草</a></li>
-                            <li><a href="#">皮衣</a></li>
-                            <li><a href="#">打底衫</a></li>
-                            <li><a href="#">套装</a></li>
-                            <li><a href="#">妈妈装</a></li>
-                            <li><a href="#">西装</a></li>
-                            <li><a href="#">卫衣</a></li>
-                            <li><a href="#">冬外套</a></li>
-                            <li><a href="#">小西装</a></li>
-                            <li><a href="#">半身裙</a></li>
-                            <li><a href="#">牛仔裤</a></li>
-                            <li><a href="#">高腰裤</a></li>
-                            <li><a href="#">红人私服</a></li>
-                            <li><a href="#">甜美风</a></li>
-                            <li><a href="#">文艺风</a></li>
-                            <li><a href="#">街头风</a></li>
-                            <li><a href="#">原创单品</a></li>
-                            <li><a href="#">通勤风</a></li>
-                            <li><a href="#">大厂直供</a></li>
-                            <li><a href="#">腔调</a></li>
-                            <li><a href="#">潮流志</a></li>
-                            <li><a href="#">淘品牌</a></li>
-                            <li><a href="#">风衣</a></li>
-                            <li><a href="#">衬衫</a></li>
-                        </ul>
                     </div>
-                    <div class="panel-row">
-                        <div class="row-hd">
-                            <a href="#">
-                                <img src="../image/nav/b-1.jpg" class="nav-icon">
-                                <h4>男装</h4>
-                            </a>
-                            <a href="#" class="more">更多〉</a>
+                    <!--左边导航-->
+                    <div class="multinav">
+                        <div class="multinav-bd">
+                            <div class="name">
+                                <a href="#">
+                                    <h3>主体市场</h3>
+                                    <i class="service-icon icon f-r">&#xe621;</i>
+                                </a>
+                            </div>
+                            <ul class="nav-service">
+                                <li class="row row-1">
+                                    <i class="service-icon">&#xe602;</i>
+                                    <a href="#">女装</a> /
+                                    <a href="#">男装</a> /
+                                    <a href="#">内衣</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-2">
+                                    <i class="service-icon">&#xe604;</i>
+                                    <a href="#">鞋靴</a> /
+                                    <a href="#">箱包</a> /
+                                    <a href="#">配件</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-3">
+                                    <i class="service-icon">&#xe60b;</i>
+                                    <a href="#">童装玩具</a> /
+                                    <a href="#">孕产</a> /
+                                    <a href="#">用品</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-4">
+                                    <i class="service-icon">&#xe603;</i>
+                                    <a href="#">家电</a> /
+                                    <a href="#">数码</a> /
+                                    <a href="#">手机</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-5">
+                                    <i class="service-icon">&#xe607;</i>
+                                    <a href="#">美妆</a> /
+                                    <a href="#">洗护</a> /
+                                    <a href="#">保健品</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-6">
+                                    <i class="service-icon">&#xe606;</i>
+                                    <a href="#">珠宝</a> /
+                                    <a href="#">眼镜</a> /
+                                    <a href="#">手表</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-7">
+                                    <i class="service-icon">&#xe605;</i>
+                                    <a href="#">运动</a> /
+                                    <a href="#">户外</a> /
+                                    <a href="#">乐器</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-8">
+                                    <i class="service-icon">&#xe620;</i>
+                                    <a href="#">游戏</a> /
+                                    <a href="#">动漫</a> /
+                                    <a href="#">影视</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-9">
+                                    <i class="service-icon">&#xe60a;</i>
+                                    <a href="#">美食</a> /
+                                    <a href="#">生鲜</a> /
+                                    <a href="#">零食</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-10">
+                                    <i class="service-icon">&#xe60e;</i>
+                                    <a href="#">鲜花</a> /
+                                    <a href="#">宠物</a> /
+                                    <a href="#">农资</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-11">
+                                    <i class="service-icon">&#xe609;</i>
+                                    <a href="#">房产</a> /
+                                    <a href="#">装修</a> /
+                                    <a href="#">建材</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-12">
+                                    <i class="service-icon">&#xe608;</i>
+                                    <a href="#">家具</a> /
+                                    <a href="#">家饰</a> /
+                                    <a href="#">家纺</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-13">
+                                    <i class="service-icon">&#xe60f;</i>
+                                    <a href="#">汽车</a> /
+                                    <a href="#">二手车</a> /
+                                    <a href="#">用品</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-14">
+                                    <i class="service-icon">&#xe601;</i>
+                                    <a href="#">办公</a> /
+                                    <a href="#">DIY</a> /
+                                    <a href="#">五金电子</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-15">
+                                    <i class="service-icon">&#xe600;</i>
+                                    <a href="#">百货</a> /
+                                    <a href="#">餐厨</a> /
+                                    <a href="#">家庭保健</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                                <li class="row row-16">
+                                    <i class="service-icon">&#xe61f;</i>
+                                    <a href="#">学习</a> /
+                                    <a href="#">卡券</a> /
+                                    <a href="#">本地服务</a>
+                                    <i class="icon">〉</i>
+                                </li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li class="color-o"><a href="#">新品</a></li>
-                            <li><a href="#">穿搭指南</a></li>
-                            <li><a href="#">设计款</a></li>
-                            <li class="color-o"><a href="#">线下大牌</a></li>
-                            <li><a href="#">品质优选</a></li>
-                            <li><a href="#" class="color-o">外套</a></li>
-                            <li class="color-o"><a href="#">衬衫</a></li>
-                            <li><a href="#">夹克</a></li>
-                            <li class="color-o"><a href="#">卫衣</a></li>
-                            <li><a href="#">T恤</a></li>
-                            <li><a href="#">套装</a></li>
-                            <li><a href="#">针织衫</a></li>
-                            <li><a href="#">毛衣</a></li>
-                            <li><a href="#">羽绒服</a></li>
-                            <li><a href="#">风衣</a></li>
-                            <li><a href="#">棒球服</a></li>
-                            <li><a href="#">运动外套</a></li>
-                            <li><a href="#">呢大衣</a></li>
-                            <li><a href="#">西装</a></li>
-                            <li><a href="#">开衫</a></li>
-                            <li><a href="#">棉衣</a></li>
-                            <li><a href="#">马甲</a></li>
-                            <li><a href="#">情侣装</a></li>
-                            <li><a href="#">大码</a></li>
-                            <li><a href="#">中老年</a></li>
-                            <li><a href="#">休闲裤</a></li>
-                            <li><a href="#">牛仔裤</a></li>
-                            <li><a href="#">运动裤</a></li>
-                            <li><a href="#">铅笔裤</a></li>
-                            <li><a href="#" class="color-o">阔腿裤</a></li>
-                            <li><a href="#">哈伦裤</a></li>
-                            <li><a href="#">皮裤</a></li>
-                            <li><a href="#">九分裤</a></li>
-                        </ul>
-                    </div>
-                    <div class="panel-row">
-                        <div class="row-hd">
-                            <a href="#">
-                                <img src="../image/nav/c-1.jpg" class="nav-icon">
-                                <h4>内衣</h4>
-                            </a>
-                            <a href="#" class="more">更多〉</a>
+                        <div class="multinav-ad">
+                            <img src="../image/sucai/ic.jpg" alt="ad" style="width: 190px;height: 40px;">
                         </div>
-                        <ul>
-                            <li class="color-o"><a href="#">睡衣冬</a></li>
-                            <li><a href="#">保暖内衣</a></li>
-                            <li><a href="#">内裤女</a></li>
-                            <li><a href="#">内裤男</a></li>
-                            <li><a href="#" class="color-o">长袖睡衣</a></li>
-                            <li><a href="#" class="color-o">珊瑚绒睡衣</a></li>
-                            <li class="color-o"><a href="#">夹棉睡衣</a></li>
-                            <li><a href="#">裤袜</a></li>
-                            <li class="color-o"><a href="#">长筒袜</a></li>
-                            <li><a href="#">棉袜</a></li>
-                            <li><a href="#">情侣睡衣</a></li>
-                            <li><a href="#">秋裤</a></li>
-                            <li><a href="#">保暖背心</a></li>
-                            <li><a href="#">睡袍</a></li>
-                            <li><a href="#">男士睡衣</a></li>
-                            <li><a href="#">无钢圈文胸</a></li>
-                            <li><a href="#">塑身衣</a></li>
-                            <li><a href="#">内衣套装</a></li>
-                            <li><a href="#">文胸套装</a></li>
-                            <li><a href="#">打底裤</a></li>
-                            <li><a href="#">连体睡衣</a></li>
-                            <li><a href="#">睡裙女冬</a></li>
-                            <li><a href="#">巨龙文胸</a></li>
-                            <li><a href="#">男士袜子</a></li>
-                            <li><a href="#">棉袜女</a></li>
-                            <li><a href="#">卡通睡衣</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="panel-col2">
-                    <h3>
+                        <div class="nav-panel navpl-1 hide">
+                            <div class="panel-col1">
+                                <div class="panel-row">
+                                    <div class="row-hd">
+                                        <a href="#">
+                                            <img src="../image/nav/a-1.jpg" class="nav-icon">
+                                            <h4>女装</h4>
+                                        </a>
+                                        <a href="#" class="more">更多〉</a>
+                                    </div>
+                                    <ul>
+                                        <li class="color-o"><a href="#">冬新品</a></li>
+                                        <li class="color-o"><a href="#">羽绒服</a></li>
+                                        <li><a href="#">连衣裙</a></li>
+                                        <li class="color-o"><a href="#">毛呢外套</a></li>
+                                        <li><a href="#">大码女装</a></li>
+                                        <li><a href="#">毛衣</a></li>
+                                        <li class="color-o"><a href="#">裤子</a></li>
+                                        <li><a href="#">毛针织裤</a></li>
+                                        <li class="color-o"><a href="#">棉衣/棉服</a></li>
+                                        <li><a href="#">皮草</a></li>
+                                        <li><a href="#">皮衣</a></li>
+                                        <li><a href="#">打底衫</a></li>
+                                        <li><a href="#">套装</a></li>
+                                        <li><a href="#">妈妈装</a></li>
+                                        <li><a href="#">西装</a></li>
+                                        <li><a href="#">卫衣</a></li>
+                                        <li><a href="#">冬外套</a></li>
+                                        <li><a href="#">小西装</a></li>
+                                        <li><a href="#">半身裙</a></li>
+                                        <li><a href="#">牛仔裤</a></li>
+                                        <li><a href="#">高腰裤</a></li>
+                                        <li><a href="#">红人私服</a></li>
+                                        <li><a href="#">甜美风</a></li>
+                                        <li><a href="#">文艺风</a></li>
+                                        <li><a href="#">街头风</a></li>
+                                        <li><a href="#">原创单品</a></li>
+                                        <li><a href="#">通勤风</a></li>
+                                        <li><a href="#">大厂直供</a></li>
+                                        <li><a href="#">腔调</a></li>
+                                        <li><a href="#">潮流志</a></li>
+                                        <li><a href="#">淘品牌</a></li>
+                                        <li><a href="#">风衣</a></li>
+                                        <li><a href="#">衬衫</a></li>
+                                    </ul>
+                                </div>
+                                <div class="panel-row">
+                                    <div class="row-hd">
+                                        <a href="#">
+                                            <img src="../image/nav/b-1.jpg" class="nav-icon">
+                                            <h4>男装</h4>
+                                        </a>
+                                        <a href="#" class="more">更多〉</a>
+                                    </div>
+                                    <ul>
+                                        <li class="color-o"><a href="#">新品</a></li>
+                                        <li><a href="#">穿搭指南</a></li>
+                                        <li><a href="#">设计款</a></li>
+                                        <li class="color-o"><a href="#">线下大牌</a></li>
+                                        <li><a href="#">品质优选</a></li>
+                                        <li><a href="#" class="color-o">外套</a></li>
+                                        <li class="color-o"><a href="#">衬衫</a></li>
+                                        <li><a href="#">夹克</a></li>
+                                        <li class="color-o"><a href="#">卫衣</a></li>
+                                        <li><a href="#">T恤</a></li>
+                                        <li><a href="#">套装</a></li>
+                                        <li><a href="#">针织衫</a></li>
+                                        <li><a href="#">毛衣</a></li>
+                                        <li><a href="#">羽绒服</a></li>
+                                        <li><a href="#">风衣</a></li>
+                                        <li><a href="#">棒球服</a></li>
+                                        <li><a href="#">运动外套</a></li>
+                                        <li><a href="#">呢大衣</a></li>
+                                        <li><a href="#">西装</a></li>
+                                        <li><a href="#">开衫</a></li>
+                                        <li><a href="#">棉衣</a></li>
+                                        <li><a href="#">马甲</a></li>
+                                        <li><a href="#">情侣装</a></li>
+                                        <li><a href="#">大码</a></li>
+                                        <li><a href="#">中老年</a></li>
+                                        <li><a href="#">休闲裤</a></li>
+                                        <li><a href="#">牛仔裤</a></li>
+                                        <li><a href="#">运动裤</a></li>
+                                        <li><a href="#">铅笔裤</a></li>
+                                        <li><a href="#" class="color-o">阔腿裤</a></li>
+                                        <li><a href="#">哈伦裤</a></li>
+                                        <li><a href="#">皮裤</a></li>
+                                        <li><a href="#">九分裤</a></li>
+                                    </ul>
+                                </div>
+                                <div class="panel-row">
+                                    <div class="row-hd">
+                                        <a href="#">
+                                            <img src="../image/nav/c-1.jpg" class="nav-icon">
+                                            <h4>内衣</h4>
+                                        </a>
+                                        <a href="#" class="more">更多〉</a>
+                                    </div>
+                                    <ul>
+                                        <li class="color-o"><a href="#">睡衣冬</a></li>
+                                        <li><a href="#">保暖内衣</a></li>
+                                        <li><a href="#">内裤女</a></li>
+                                        <li><a href="#">内裤男</a></li>
+                                        <li><a href="#" class="color-o">长袖睡衣</a></li>
+                                        <li><a href="#" class="color-o">珊瑚绒睡衣</a></li>
+                                        <li class="color-o"><a href="#">夹棉睡衣</a></li>
+                                        <li><a href="#">裤袜</a></li>
+                                        <li class="color-o"><a href="#">长筒袜</a></li>
+                                        <li><a href="#">棉袜</a></li>
+                                        <li><a href="#">情侣睡衣</a></li>
+                                        <li><a href="#">秋裤</a></li>
+                                        <li><a href="#">保暖背心</a></li>
+                                        <li><a href="#">睡袍</a></li>
+                                        <li><a href="#">男士睡衣</a></li>
+                                        <li><a href="#">无钢圈文胸</a></li>
+                                        <li><a href="#">塑身衣</a></li>
+                                        <li><a href="#">内衣套装</a></li>
+                                        <li><a href="#">文胸套装</a></li>
+                                        <li><a href="#">打底裤</a></li>
+                                        <li><a href="#">连体睡衣</a></li>
+                                        <li><a href="#">睡裙女冬</a></li>
+                                        <li><a href="#">巨龙文胸</a></li>
+                                        <li><a href="#">男士袜子</a></li>
+                                        <li><a href="#">棉袜女</a></li>
+                                        <li><a href="#">卡通睡衣</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-col2">
+                                <h3>
                                     <i class="service-icon">&#xe618;</i>
                                     猜你喜欢
                                 </h3>
-                    <p class="col-bd">实时推荐最适合你的宝贝</p>
-                    <div class="recbao">
-                        <a>
-                            <img src="../image/sucai/rec/r1.jpg" alt="新款男装羽绒裤男">
-                            <p class="title">新款男装羽绒裤男</p>
-                        </a>
-                        <a>
-                            <img src="../image/sucai/rec/r2.jpg" alt="2016新款文艺复古">
-                            <p class="title">2016新款文艺复古</p>
-                        </a>
-                        <a>
-                            <img src="../image/sucai/rec/r3.jpg" alt="冬季新款男装外套">
-                            <p class="title">冬季新款男装外套</p>
-                        </a>
-                        <a>
-                            <img src="../image/sucai/rec/r4.jpg" alt="横竖格子条纹拼接">
-                            <p class="title">横竖格子条纹拼接</p>
-                        </a>
-                        <a>
-                            <img src="../image/sucai/rec/r5.jpg" alt="正品中老年羽绒裤">
-                            <p class="title">正品中老年羽绒裤</p>
-                        </a>
-                        <a>
-                            <img src="../image/sucai/rec/r6.jpg" alt="新款羽绒定制">
-                            <p class="title">新款羽绒定制</p>
-                        </a>
+                                <p class="col-bd">实时推荐最适合你的宝贝</p>
+                                <div class="recbao">
+                                    <a>
+                                        <img src="../image/sucai/rec/r1.jpg" alt="新款男装羽绒裤男">
+                                        <p class="title">新款男装羽绒裤男</p>
+                                    </a>
+                                    <a>
+                                        <img src="../image/sucai/rec/r2.jpg" alt="2016新款文艺复古">
+                                        <p class="title">2016新款文艺复古</p>
+                                    </a>
+                                    <a>
+                                        <img src="../image/sucai/rec/r3.jpg" alt="冬季新款男装外套">
+                                        <p class="title">冬季新款男装外套</p>
+                                    </a>
+                                    <a>
+                                        <img src="../image/sucai/rec/r4.jpg" alt="横竖格子条纹拼接">
+                                        <p class="title">横竖格子条纹拼接</p>
+                                    </a>
+                                    <a>
+                                        <img src="../image/sucai/rec/r5.jpg" alt="正品中老年羽绒裤">
+                                        <p class="title">正品中老年羽绒裤</p>
+                                    </a>
+                                    <a>
+                                        <img src="../image/sucai/rec/r6.jpg" alt="新款羽绒定制">
+                                        <p class="title">新款羽绒定制</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="nav nav1">
+                </div>
+                <!--横排导航-->
+                <div class="nav nav2">
+                </div>
+                <!--顶广告区-->
+                <div class="ad">
+                </div>
+                <!--右侧边栏-->
+                <div class="aside">
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="nav nav1">
-    </div>
-    <!--横排导航-->
-    <div class="nav nav2">
-    </div>
-    <!--顶广告区-->
-    <div class="ad">
-    </div>
-    <!--右侧边栏-->
-    <div class="aside">
-    </div>
-    </div>
-    <!--分区展示-->
-    <div class="section">
-    </div>
-    <!--底部-->
-    <div class="footer">
-    </div>
-    <script src="js/index.js"></script>
+            <!--分区展示-->
+            <div class="section">
+            </div>
+            <!--底部-->
+            <div class="footer">
+            </div>
+            <!-- <script src="js/index.js"></script>
+            <script src="js/lunbo.js"></script>
+ -->
 </body>
 
 </html>

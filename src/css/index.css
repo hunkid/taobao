@@ -205,10 +205,10 @@ a:hover {
 
 #userinfo .toggle img {
     -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-         -o-border-radius: 50%;
-            border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 }
 
 #userinfo .toggle .account-nav {
@@ -227,10 +227,10 @@ a:hover {
     border: 1px #ddf6be solid;
     background-color: #e9fecf;
     -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-         -o-border-radius: 2px;
-            border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
 }
 
 #myfavorite .toggle {
@@ -627,10 +627,10 @@ button:hover {
     background-color: #f40;
     color: #fff !important;
     -webkit-border-radius: .8em;
-       -moz-border-radius: .8em;
-        -ms-border-radius: .8em;
-         -o-border-radius: .8em;
-            border-radius: .8em;
+    -moz-border-radius: .8em;
+    -ms-border-radius: .8em;
+    -o-border-radius: .8em;
+    border-radius: .8em;
 }
 
 .screen .rect .rect-wrap .nav-bar .nav-item-a li a {
@@ -668,6 +668,7 @@ button:hover {
 
 .screen .rect .rect-wrap .ad1 .ad-item {
     width: 2600px;
+    position: relative;
 }
 
 .adlunbo .ad-item li {
@@ -678,6 +679,7 @@ button:hover {
 
 .screen .rect .rect-wrap .ad2 .ad-item {
     width: 3120px;
+    position: relative;
 }
 
 .screen .rect .rect-wrap .ad2 .ad-col1 a {
@@ -755,10 +757,10 @@ button:hover {
     text-align: center;
     display: block;
     -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-         -o-border-radius: 10px;
-            border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -787,7 +789,7 @@ button:hover {
     background-color: #b7b7b7;
 }
 
-.screen .rect .rect-wrap .adlunbo .lunbo-nav li .select {
+.screen .rect .rect-wrap .adlunbo .lunbo-nav .select a {
     background-color: #f40;
 }
 
@@ -843,8 +845,8 @@ button:hover {
     left: 0;
     top: 44%;
     -webkit-transition: all .2s;
-         -o-transition: all .2s;
-            transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
     color: #fff;
 }
 
@@ -864,6 +866,7 @@ button:hover {
 .screen .rect .rect-wrap .screen-col-a .turnLorR a:hover {
     background-color: rgba(0, 0, 0, .5);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5d00000", endColorstr="#5d000000", GradientType=0);
+    color: inherit;
 }
 
 .screen .rect .rect-wrap .screen-col-b {
@@ -898,10 +901,10 @@ button:hover {
 
 .screen .rect .rect-wrap .screen-col-c .memember .member-person img {
     -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-         -o-border-radius: 50%;
-            border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .screen .rect .rect-wrap .screen-col-c .hello {
@@ -973,6 +976,11 @@ button:hover {
     padding: 7px 0 4px;
 }
 
+.screen .rect .rect-wrap .screen-col-c .news .nav .select {
+    border-bottom: 2px solid #ff4400;
+    font-weight: 700;
+}
+
 .screen .rect .rect-wrap .screen-col-c .news .nav {
     width: 100%;
     padding: 0 8px;
@@ -980,13 +988,14 @@ button:hover {
 }
 
 .screen .rect .rect-wrap .screen-col-c .news .newsshow {
-    padding-top: 14px;
+    padding-top: 10px;
     height: 60px;
 }
 
 .screen .rect .rect-wrap .screen-col-c .news .nav li {
     display: block;
     float: left;
+    padding-bottom: 3px;
     margin: 0 8px;
     width: 39px;
     color: #3c3c3c;
@@ -1022,6 +1031,7 @@ button:hover {
 
 .multiplay {
     margin-top: 2px;
+    position: relative;
 }
 
 .multiplay ul {
@@ -1036,16 +1046,21 @@ button:hover {
 .multiplay ul .iconwrap {
     display: block;
     float: left;
-    width: 72px;
+    width: 71px;
     height: 67px;
-    border-top: 1px solid #eaeaea;
-    border-right: 1px solid #eaeaea;
+    border: 1px solid #eaeaea;
     background-color: #fff;
     text-align: center;
 }
 
 .multiplay ul .min.iconwrap {
-    width: 71px;
+    width: 70px;
+}
+
+.multiplay ul .select {
+    border: 1px solid #ff4400;
+    border-bottom: 1px solid #fff;
+    z-index: 9;
 }
 
 .multiplay .icon {
@@ -1104,7 +1119,8 @@ button:hover {
 .multiplay .flwrap {
     position: absolute;
     background: #fff;
-    top: 100%;
+    top: 69px;
+    padding-top: 2px;
     left: 0;
     z-index: 1;
     padding-left: 15px;
@@ -1113,11 +1129,13 @@ button:hover {
     border: 1px solid #f40;
     text-align: left;
     color: #666;
+    margin-top: -1px;
 }
 
 .multiplay .flwrap li {
     display: inline-block;
     padding: 3px 10px;
+    position: relative;
 }
 
 .multiplay .flwrap .close {
@@ -1165,6 +1183,7 @@ button:hover {
 
 .multiplay .flwrap .fl-wrap.account {
     margin-top: -1px;
+    position: relative;
 }
 
 .multiplay .flwrap .fl-wrap .fl-wrap-tel {
@@ -1193,6 +1212,61 @@ button:hover {
     line-height: 28px;
 }
 
+#bill {
+    position: absolute;
+    width: 188px;
+    height: 140px;
+    top: 100%;
+    left: -1px;
+    background-color: #fff;
+}
+
+#bill ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #959595;
+}
+
+#bill li {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 8px;
+    font-size: 14px;
+    width: 85px;
+    height: 27px;
+    line-height: 27px;
+    float: left;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    z-index: 0;
+    margin-top: -1px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+#bill .bill-firstline {
+    border-top-color: #959595;
+}
+
+#bill .bill-left {
+    border-right: 1px solid #dcdcdc;
+}
+
+#bill em {
+    font-style: normal;
+    font-weight: 700;
+    color: inherit;
+}
+
+#bill .selected,
+#bill .selecting {
+    background-color: #ffece5;
+    color: #fc461e;
+}
+
 #payacount {
     cursor: default;
 }
@@ -1213,10 +1287,10 @@ button:hover {
     height: 21px;
     line-height: 21px;
     -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-         -o-border-radius: 2px;
-            border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
     font-size: 12px;
     box-sizing: content-box;
 }
